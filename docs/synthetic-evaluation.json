@@ -1,0 +1,132 @@
+{
+  "id": "a732db29fa21223e",
+  "name": "Reproducible synthetic evaluation",
+  "created_at": "2026-10-17T09:03:58.264774+00:00",
+  "schema": "forest-v1",
+  "features": [
+    "rain_3h_mm",
+    "rain_24h_mm",
+    "rain_72h_mm",
+    "soil_moisture",
+    "slope_deg",
+    "elevation_m",
+    "deformation_mm_day"
+  ],
+  "provenance": "synthetic",
+  "operationally_validated": false,
+  "dataset_sha256": "4926ee02fa506ccdfd1374a9407387953457a2129fa913382534e8c5bd26f56a",
+  "training_rows": 1200,
+  "holdout_rows": 400,
+  "training_groups": [
+    "synthetic-block-00",
+    "synthetic-block-01",
+    "synthetic-block-02",
+    "synthetic-block-03",
+    "synthetic-block-05",
+    "synthetic-block-07",
+    "synthetic-block-08",
+    "synthetic-block-09",
+    "synthetic-block-10",
+    "synthetic-block-11",
+    "synthetic-block-13",
+    "synthetic-block-14",
+    "synthetic-block-17",
+    "synthetic-block-18",
+    "synthetic-block-20",
+    "synthetic-block-21",
+    "synthetic-block-22",
+    "synthetic-block-23",
+    "synthetic-block-24",
+    "synthetic-block-25",
+    "synthetic-block-28",
+    "synthetic-block-29",
+    "synthetic-block-30",
+    "synthetic-block-31",
+    "synthetic-block-32",
+    "synthetic-block-33",
+    "synthetic-block-34",
+    "synthetic-block-35",
+    "synthetic-block-36",
+    "synthetic-block-38"
+  ],
+  "holdout_groups": [
+    "synthetic-block-04",
+    "synthetic-block-06",
+    "synthetic-block-12",
+    "synthetic-block-15",
+    "synthetic-block-16",
+    "synthetic-block-19",
+    "synthetic-block-26",
+    "synthetic-block-27",
+    "synthetic-block-37",
+    "synthetic-block-39"
+  ],
+  "metrics": {
+    "precision": 0.8080357142857143,
+    "recall": 0.8341013824884793,
+    "f1": 0.8208616780045351,
+    "roc_auc": 0.8953690413235627,
+    "brier": 0.1325521171969369,
+    "prevalence_baseline_brier": 0.2487381944444444,
+    "confusion_matrix": [
+      [
+        140,
+        43
+      ],
+      [
+        36,
+        181
+      ]
+    ],
+    "holdout_event_prevalence": 0.5425
+  },
+  "global_importance": {
+    "rain_3h_mm": 0.13835391418645185,
+    "rain_24h_mm": 0.34683941140075936,
+    "rain_72h_mm": 0.16768944615263986,
+    "soil_moisture": 0.11496987600280915,
+    "slope_deg": 0.07468898494966565,
+    "elevation_m": 0.03855258652044696,
+    "deformation_mm_day": 0.11890578078722715
+  },
+  "reference_values": {
+    "rain_3h_mm": 51.324290000000005,
+    "rain_24h_mm": 178.322485,
+    "rain_72h_mm": 458.52513,
+    "soil_moisture": 0.53532,
+    "slope_deg": 34.907560000000004,
+    "elevation_m": 2225.07002,
+    "deformation_mm_day": 6.156375000000001
+  },
+  "training_ranges": {
+    "rain_3h_mm": [
+      0.04969,
+      531.03528
+    ],
+    "rain_24h_mm": [
+      0.53814,
+      841.3261
+    ],
+    "rain_72h_mm": [
+      1.16095,
+      899.95253
+    ],
+    "soil_moisture": [
+      0.08094,
+      0.96998
+    ],
+    "slope_deg": [
+      5.03409,
+      64.91657
+    ],
+    "elevation_m": [
+      52.30841,
+      4497.72785
+    ],
+    "deformation_mm_day": [
+      0.00771,
+      11.99833
+    ]
+  },
+  "export_max_error": 3.3306690738754696e-16
+}
